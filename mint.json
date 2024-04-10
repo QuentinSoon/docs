@@ -5,6 +5,7 @@
 		"dark": "/logo/dark.svg",
 		"light": "/logo/light.svg"
 	},
+	"backgroundImage": "https://mintlify.s3-us-west-1.amazonaws.com/radiant/background.png",
 	"favicon": "/favicon.svg",
 	"colors": {
 		"primary": "#00A7F9",
