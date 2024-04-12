@@ -196,6 +196,45 @@
 						}
 					},
 					"required": true
+				},
+				"responses": {
+					"200": {
+						"description": "plant response",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": {
+										"allOf": [
+											{
+												"$ref": "#/components/schemas/Plant"
+											},
+											{
+												"required": ["id"],
+												"type": "object",
+												"properties": {
+													"id": {
+														"description": "Identification number of the plant",
+														"type": "integer",
+														"format": "int64"
+													}
+												}
+											}
+										]
+									}
+								}
+							}
+						}
+					},
+					"400": {
+						"description": "unexpected error",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/Error"
+								}
+							}
+						}
+					}
 				}
 			}
 		}
