@@ -13,11 +13,6 @@
 			"url": "http://sandbox.mintlify.com"
 		}
 	],
-	"security": [
-		{
-			"bearerAuth": []
-		}
-	],
 	"paths": {
 		"/api/token": {
 			"post": {
@@ -63,7 +58,7 @@
 			"GetToken": {
 				"allOf": [
 					{
-						"required": ["name"],
+						"required": [],
 						"type": "object",
 						"properties": {
 							"grant_type": {
