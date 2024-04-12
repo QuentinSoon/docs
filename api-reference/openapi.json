@@ -175,7 +175,13 @@
 				"description": "Creates a new plant in the store",
 				"requestBody": {
 					"description": "Plant to add to the store",
-
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/GetToken"
+							}
+						}
+					},
 					"required": true
 				},
 				"responses": {
@@ -184,24 +190,7 @@
 						"content": {
 							"application/json": {
 								"schema": {
-									"$ref": {
-										"allOf": [
-											{
-												"$ref": "#/components/schemas/Plant"
-											},
-											{
-												"required": ["id"],
-												"type": "object",
-												"properties": {
-													"id": {
-														"description": "Identification number of the plant",
-														"type": "integer",
-														"format": "int64"
-													}
-												}
-											}
-										]
-									}
+									"$ref": "#/components/schemas/Plant"
 								}
 							}
 						}
@@ -237,6 +226,24 @@
 				}
 			},
 			"NewPlant": {
+				"allOf": [
+					{
+						"$ref": "#/components/schemas/Plant"
+					},
+					{
+						"required": ["id"],
+						"type": "object",
+						"properties": {
+							"id": {
+								"description": "Identification number of the plant",
+								"type": "integer",
+								"format": "int64"
+							}
+						}
+					}
+				]
+			},
+			"GetToken": {
 				"allOf": [
 					{
 						"$ref": "#/components/schemas/Plant"
