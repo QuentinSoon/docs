@@ -249,18 +249,17 @@
 						"required": ["name"],
 						"type": "object",
 						"properties": {
-							"name": {
+							"grant_type": {
 								"description": "The name of the plant lool",
 								"type": "string"
 							},
-							"tag": {
-								"description": "Tag to specify the type loolr",
+							"username": {
+								"description": "Utilisateur de connexion",
 								"type": "string"
 							},
-							"id": {
-								"description": "Identification number of the plant",
-								"type": "integer",
-								"format": "int64"
+							"password": {
+								"description": "Mot de passe de connexion",
+								"type": "string"
 							}
 						}
 					}
