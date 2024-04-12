@@ -256,13 +256,7 @@
 							"tag": {
 								"description": "Tag to specify the type loolr",
 								"type": "string"
-							}
-						}
-					},
-					{
-						"required": ["id"],
-						"type": "object",
-						"properties": {
+							},
 							"id": {
 								"description": "Identification number of the plant",
 								"type": "integer",
