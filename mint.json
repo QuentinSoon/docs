@@ -79,7 +79,7 @@
 		},
 		{
 			"group": "Ressources",
-			"pages": ["api-reference/endpoint/plant/get"]
+			"pages": ["api-reference/endpoint/authentification/post"]
 		}
 	],
 	"footerSocials": {
