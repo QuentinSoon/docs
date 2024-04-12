@@ -76,6 +76,10 @@
 				"api-reference/endpoint/create",
 				"api-reference/endpoint/delete"
 			]
+		},
+		{
+			"group": "Ressources",
+			"pages": ["api-reference/endpoint/plant/*"]
 		}
 	],
 	"footerSocials": {
