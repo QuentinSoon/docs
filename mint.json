@@ -26,7 +26,7 @@
 		"url": "https://7opteam.atlassian.net/jira/your-work"
 	},
 	"api": {
-		"baseUrl": "https://mintlify.com/api",
+		"baseUrl": "https://mintlify.com/",
 		"auth": {
 			"method": "bearer"
 		}
