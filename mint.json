@@ -25,6 +25,12 @@
 		"name": "Ouvrir un ticket",
 		"url": "https://7opteam.atlassian.net/jira/your-work"
 	},
+	"api": {
+		"baseUrl": "https://mintlify.com/api",
+		"auth": {
+			"method": "bearer"
+		}
+	},
 	"tabs": [
 		{
 			"name": "API Reference",
