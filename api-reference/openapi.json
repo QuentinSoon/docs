@@ -15,7 +15,7 @@
 	],
 	"security": [
 		{
-			"bearerAuth": ["coucou"]
+			"bearerAuth": []
 		}
 	],
 	"paths": {
